@@ -1,0 +1,19 @@
+[Unit]
+Description=Echo API Service
+After=network.target
+
+[Service]
+User=your_user  # Replace with your user account
+WorkingDirectory=/path/to/your/project  # Replace with your project directory
+ExecStart=/usr/bin/python3 app.py main:app  # Replace with your Python interpreter and app entry point
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+
+#############################################
+# sudo systemctl daemon-reload
+# sudo systemctl enable echo_api.service
+# sudo systemctl start echo_api.service
+# sudo systemctl start echo_api.service
+#############################################
