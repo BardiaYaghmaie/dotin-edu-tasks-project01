@@ -3,10 +3,10 @@ Description=Echo API Service
 After=network.target
 
 [Service]
-User=your_user  # Replace with your user account
-WorkingDirectory=/path/to/your/project  # Replace with your project directory
-ExecStart=/usr/bin/python3 app.py main:app  # Replace with your Python interpreter and app entry point
-Restart=always
+User=bardia
+WorkingDirectory=/home/bardia/Desktop/dotin-edu-tasks/dotin-edu-tasks-project01
+Environment=VIRTUAL_ENV=/home/bardia/Desktop/dotin-edu-tasks/dotin-edu-tasks-project01/venv
+ExecStart=/home/bardia/Desktop/dotin-edu-tasks/dotin-edu-tasks-project01/venv/bin/python /home/bardia/Desktop/dotin-edu-tasks/dotin-edu-tasks-project01/api/echo_api.py
 
 [Install]
 WantedBy=multi-user.target
