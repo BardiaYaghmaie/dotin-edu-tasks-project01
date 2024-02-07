@@ -18,11 +18,12 @@ Write a service file for this API. Whenever the computer reboots, this service s
 Write a script that works as a backup manager.
 
 Commands:
-  bm --schedule|-s {crontab_format} {src_path} {des_path} (Setup a new backup)
-  bm --list (Show list of configured backups)
-  bm --older-than {time_period} --housekeeping {backup_id} (Delete backups older than given period)
-  bm --help|-h (show help)
-
+  ```
+   bm --schedule|-s {crontab_format} {src_path} {des_path} (Setup a new backup)
+   bm --list (Show list of configured backups)
+   bm --older-than {time_period} --housekeeping {backup_id} (Delete backups older than given period)
+   bm --help|-h (show help)
+  ```
 ## Step 4
 Set up a backup for your API with your script!
 Backup from your API data every 12:30 on even days.
