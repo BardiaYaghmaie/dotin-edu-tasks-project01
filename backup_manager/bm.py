@@ -86,9 +86,7 @@ def parse_args():
     parser_housekeeping.add_argument("--older-than", required=True, type=int, help="Time period in days")
     parser_housekeeping.add_argument("backup_id", help="Backup ID")
     
-    # Subparser for showing help
-    parser.add_argument("--help", "-h", action="help", help="Show help")
-    
+        
     return parser.parse_args()
 
 def main():
