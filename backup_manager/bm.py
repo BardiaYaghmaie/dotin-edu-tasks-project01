@@ -1,3 +1,4 @@
+<<<<<<< HEAD:backup_manager/bm.py
 import argparse
 import os
 import subprocess
@@ -101,3 +102,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+=======
+>>>>>>> parent of 8e1c377 (backup-manager phase 1):backup_manager/backup_manager.py
